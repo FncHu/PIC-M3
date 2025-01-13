@@ -37,7 +37,7 @@
         <div class="page-container">
             <div class="inner">
                 <div class="title">
-                    <h1>PIC-MMM:Perceptual Image Compression with Multi-scale and Multi-modal Merging</h1>
+                    <h1>PIC-MMM:Perceptual Image Compression with Multi-scale and Multi-modal Merge Networks</h1>
                     <!-- <div class="container-sm">
                         <div class="row justify-content-md-center">
                             <div class="col-sm-auto">
@@ -76,15 +76,11 @@
                 <div class="container-md">
                     <h2>Abstract</h2>
                     <p>
-                        With the rapid growth of online media, the number of images on the Internet has increased dramatically, presenting significant challenges for data transmission and storage. 
-                        This necessitates the development of efficient compression algorithms. 
-                        Although learned image compression (LIC) methods have achieved significant advancements and demonstrate impressive performance based on rate-distortion metrics, they frequently overlook the subjective experiences of viewers. 
-                        In contrast, perceptual image compression (PIC) techniques have gained considerable interest for their emphasis on maintaining visual quality and aligning with human perception in compressed images.                     
-                        In this paper, we introduce a novel perceptual image compression network that integrates diverse multimodal information across multiple scales to enhance the model's graphical perception, resulting in superior perceptual compression outcomes.
-                        To efficiently and effectively merge information from different modalities, we propose a fusion approach called the Multi-Scale Criss-Cross Net (MS-CCNet). Specifically, for each pixel, a new criss-cross attention module operates in a single dimension, initially fusing information along the height dimension to capture relevant vertical context. Following dimensionality reduction, the pixels derived from several adjacent pixels are then fused along the width dimension to gather pertinent information at various horizontal scales. Through iterative looping operations, the final pixel can effectively capture the contextual relationships across the entire image.
-                        This approach significantly improves the overall perceptual quality of the image. We perform comprehensive experiments to quantitatively assess the core components of our algorithm, clarify the theoretical foundations of text and segmentation guidance, and showcase the method's effectiveness from various angles. 
-                        Finally, we evaluate our algorithm using state-of-the-art perceptual quality metrics, such as CLIP-IQA, NIQE, and FID. The results show that our PIC-MMM network outperforms existing algorithms in all the assessed metrics.
-
+                        With the rapid growth of online media, the number of images on the Internet has increased dramatically, presenting significant challenges for data transmission and storage. This necessitates the development of efficient compression algorithms. Although learned image compression (LIC) methods have achieved significant advancements and demonstrate impressive performance based on rate-distortion metrics, they frequently overlook the subjective experiences of viewers. In contrast, perceptual image compression (PIC) techniques have gained considerable interest for their emphasis on maintaining visual quality and aligning with human perception in compressed images. 
+                    In this paper, we introduce a novel perceptual image compression network that integrates diverse multimodal information across multiple scales to enhance the model's graphical perception, resulting in superior perceptual compression outcomes.
+                    To efficiently and effectively merge information from different modalities, we propose a fusion approach called the Multi-scale Multi-modal Merge Networks (MMMNet). Specifically, for each pixel, a new 1D MMMNet operates in a single dimension, initially fusing information along the height dimension to capture relevant vertical context. Following dimensionality reduction, the pixels derived from several adjacent pixels are then fused along the width dimension to gather pertinent information at various horizontal scales. Through iterative looping operations, the final pixel can effectively capture the contextual relationships across the entire image.
+                    This approach significantly improves the overall perceptual quality of the image. We perform comprehensive experiments to quantitatively assess the core components of our algorithm, clarify the theoretical foundations of text and segmentation guidance, and showcase the method's effectiveness from various angles. 
+                    Finally, we assess our algorithm using a range of state-of-the-art perceptual quality metrics, including CLIP-IQA, NIQE, and FID. The results demonstrate that our PIC-MMM network surpasses existing algorithms across most evaluation metrics.
                     </p>
                 </div>
                 <hr/>
@@ -171,259 +167,10 @@
                     </div>
                 </div>
                 <div class="container-md centered-info paperthumbs">
-                    <h2>Paper</h2>
-                    <emph>
-                        <p class="conference-name">Submitting to PRCV 2024</p>
-                    </emph>
-                    <div class="container">
-                        <div class="row no-gutters">
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/1.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/2.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/3.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/4.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/5.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/6.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/7.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/8.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/9.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/10.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/11.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/12.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/13.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a target="_blank">
-                                    <img src="paper/14.png" class="img-fluid"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <p>
-                        <a href="https://arxiv.org/abs/2006.09965">PDF including supplementary material available on arXiv</a>
-                    </p> -->
-                    <!-- <h4>Visual Supplementary</h4>
-                    <p>The PDF on arxiv includes the supplementary materials with more information. -->
-            </p>
-                    <!-- <p>
-                        <a target="_blank" href="https://storage.googleapis.com/hific/data/appendixb/appendixb.pdf">Additional visual results are hosted as a PDF here.</a>
-                    </p> -->
-                    <!-- <h4>All Evaluation Images</h4> -->
-                    <!-- <div class="eval-imgs">
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim10.jpg" class="eval-imgs-first"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/0a0f6e31897ad27cc6e0dacce455634c.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0807.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim13.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0803.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0819.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/04f230a6e106c3c74be6105787ed226e.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0802.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim14.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim01.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/00b64869422e0011ff5bb492e56042cc.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0810.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/01443654fdc57490d5c2d8b0fd9e065b.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0813.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0812.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/01d8472427bf120a4574ee3dbb3f1234.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0806.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/0824bfaef8a290439690f35b7602d682.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim07.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/0895f500d26929e69910169a8a396050.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/09977e7621465cca10e71993a7f3632c.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/04eddb6adca47bb7caa66cf0f70a842d.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim04.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim17.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/08eba944d75efaf0bf3390e68c8d03b0.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0808.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/055829c676c9e6f3ba6b502583d7018d.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim06.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0817.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim08.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim16.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/0ae784e3c3fad9064cda2753c0782305.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/08083126ffe2eaffe89aa1840b508db7.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim19.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim18.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0809.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim11.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0801.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0811.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0820.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/091257d3b658024d9921799c583454c5.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/02c3cf767c6845b3ec9a7b102d3b02fe.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/00ce72ef820369df798001e9a28bf34f.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim09.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0818.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0815.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/06930eb49786d4ffdb886a19b999e18a.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/kodak/kodim03.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/div2k/0804.jpg"/>
-                        </a>
-                        <a target="_blank" href="https://hific.github.io/raw/index.html">
-                            <img src="dataset_thumbs/clic2020/01acd87d2ed16037467432a87863113d.jpg"/>
-                        </a>
-                    </div> -->
-                    <p>We evaluate our method on CLIC2020 and Kodak.</p>
-                    <!-- <p>
-                        <a target="_blank" href="raw/index.html">Reconstructions of HiFiC on all these datasets can be found here.</a>
-                    </p> -->
                 </div>
                 <hr/>
                 <div class="container-md">
-                    <!-- <h2>Code</h2>
-                    <p>
-                        Training code, code to evaluate with our models, and more details are available as part of the Compression repo at
-            <a target="_blank" href="https://github.com/FncHu/pic-tmf.github.io">PIC-TMF</a>
-                        .
-                    </p> -->
+
                     <hr/>
                     <h2>Experiments Result</h2>
                     <div class="outlined">
@@ -432,28 +179,30 @@
                                 The following shows different metrics on CLIC2020 and Kodak. 
                                 Arrows in the plot titles indicate whether high (↑)or low (↓) values indicate a better score.
                             </p>
-                            <p>
-                                Our comparisons include the baseline models HiFiC, which is a GAN-based model, aiming to produce results with better subjective quality. 
-                                In addition, we also compared ELIC and LIC-TCM, which are the latest methods that directly optimize the rate-distortion trade-off. 
-                                We compared our method with other typical end-to-end image compression algorithms obtained from compressai, such as Cheng, Mbt and Bmshj. 
-                                We also evaluated traditional compression algorithms including JPEG, WebP and BPG. 
-                                The aforementioned algorithms can serve as benchmarks for both end-to-end and traditional compression methods.
-                                
-                            </p>
                             <img src="data/result/metrics-clic2020.png" class="img-figure on clic2020">
                             <p>
                             </p>
                             <img src="data/result/metrics-Kodak.png" class="img-figure on kodak">
                             <p>
-                        Based on the provided context, it can be observed from two figures that the comparison on the Kodak and CLIC2020 datasets demonstrates the performance of different methods. 
-                        Specifically, our PIC-TMF exhibits significantly superior performance in terms of NIQE, FID and CLIP-IQA compared to other methods. 
-                        Notably, even though these methods operate at 2 &times; to 4 &times; higher bitrates than ours, PIC-TMF achieves comparable or even better performance. 
-                        Furthermore, the fidelity of PIC-TMF is evaluated based on PSNR. As previously mentioned, our algorithm exhibits relatively lower performance in terms of PSNR. 
-                        This is because our primary objective is to prioritize enhanced visual perception quality, even if it means accepting a certain level of distortion.
-            </p>
+                                Based on the provided context, it can be observed from two figures that the comparison on the Kodak and CLIC2020 datasets highlights the performance of various methods. 
+                                Specifically, our PIC-MMM demonstrates significantly superior performance in terms of NIQE, FID, and CLIP-IQA compared to the other methods. 
+                                Notably, even though these methods operate at 2$\times$ to 4$\times$ higher bitrates than ours, PIC-MMM achieves comparable or even better performance. 
+                                This superiority can be attributed to our dual guidance approach, which utilizes both text and segmentation maps. 
+                                By leveraging these two modalities, our model is able to capture richer contextual information and finer details, leading to improved image quality and better alignment between visual and semantic content.
+                                
+                                In the comparison of VIF, FSIM, and MS-SSIM, our model does not perform the best compared to other methods, but the gap is not significant. 
+                                This is primarily because these metrics focus on specific aspects that we cannot address simultaneously. 
+                                For instance, VIF and FSIM emphasize the preservation of visual information and structural similarity, while MS-SSIM takes into account the sensitivity of the human visual system to different frequencies and contrasts, highlighting the structure and contrast information of images at various scales. Our method places greater emphasis on the text description area and the corresponding regions of the segmentation map. 
+                                Consequently, this focus leads to improved compression quality in the targeted areas, but it may also result in overlooking the consistency of the overall structure and the preservation of background information.
+                                
+                                Our method shows a significant shortfall on the PSNR metric, but this outcome was anticipated. Given that our PIC prioritizes perceptual quality, it is not surprising that the PSNR metric falls short compared to the LIC method in this trade-off. Nonetheless, it is important to highlight that our approach still surpasses both our baseline model HiFiC and the text-guided model, PIC-TMF.            </p>
                     </p>
                         </div>
                     </div>
+                    <h2>Special Thanks</h2>
+                    <p>
+                        Special thanks to <a target="_blank" href="https://hific.github.io/">HiFiC</a> for their support and foundational resources.
+                    </p>
                 </div>
             </div>
         </div>
