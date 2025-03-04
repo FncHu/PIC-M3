@@ -3,7 +3,7 @@ let known = {
         'imginfo': 'CLIC2020/0c0ba31b279da4b8a0b848b63d302e8b.png',
         'fullres': 'https://storage.googleapis.com/hific/div2k/visualize.html?perPage=10&imgs=0848',
         'loadingRatio': '75.29411764705883%',
-        'left': ['0c0ba31b279da4b8a0b848b63d302e8b_MMM.png', 'PIC-MMM (Ours)', 'PIC-MMM (Ours)'],
+        'left': ['0c0ba31b279da4b8a0b848b63d302e8b_MMM.png', 'PIC-M<sup>3</sup> (Ours)', 'PIC-M<sup>3</sup> (Ours)'],
         'right': [
             ['0c0ba31b279da4b8a0b848b63d302e8b_jpg5.png', 'JPG (0.128 bpp, \u22481x ours kB)', 'JPG (497 kB, \u22481x ours kB)'],
             ['0c0ba31b279da4b8a0b848b63d302e8b_jpg10.png', 'JPG (0.237 bpp, \u22482x)', 'JPG (918 kB, \u22482x)'],
@@ -29,7 +29,7 @@ let known = {
         'imginfo': 'CLIC2020/0cb87ff168cf338fee6161e5e1892211.png',
         'fullres': '',
         'loadingRatio': '75.29411764705883%',
-        'left': ['0cb87ff168cf338fee6161e5e1892211_MMM.png', 'PIC-MMM (Ours)', 'PIC-MMM (Ours)'],
+        'left': ['0cb87ff168cf338fee6161e5e1892211_MMM.png', 'PIC-M<sup>3</sup> (Ours)', 'PIC-M<sup>3</sup> (Ours)'],
         'right': [
             ['0cb87ff168cf338fee6161e5e1892211_jpg5.png', 'JPG (0.054 bpp, \u22481x ours kB)', 'JPG (237 kB, \u22481x ours kB)'],
             ['0cb87ff168cf338fee6161e5e1892211_jpg10.png', 'JPG (0.153 bpp, \u22482x)', 'JPG (664 kB, \u22482x)'],
@@ -55,7 +55,7 @@ let known = {
         'imginfo': 'Kodak/kodim15.png',
         'fullres': '',
         'loadingRatio': '66.66666666666666%%',
-        'left': ['kodim15_MMM.png', 'PIC-MMM (Ours)', 'PIC-MMM (Ours)'],
+        'left': ['kodim15_MMM.png', 'PIC-M<sup>3</sup> (Ours)', 'PIC-M<sup>3</sup> (Ours)'],
         'right': [
             ['kodim15_jpg5.png', 'JPG (0.133 bpp, \u22481x ours kB)', 'JPG (80 kB, \u22481x ours kB)'],
             ['kodim15_jpg10.png', 'JPG (0.260 bpp, \u22482x)', 'JPG (156 kB, \u22482x)'],
