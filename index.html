@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>PIC-MMM</title>
+        <title>PIC-M<sup>3</sup></title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="./style.css">
@@ -37,46 +37,12 @@
         <div class="page-container">
             <div class="inner">
                 <div class="title">
-                    <h1>PIC-M$^3$:Perceptual Image Compression with Multi-scale and Multi-modal Merge Networks</h1>
-                    <!-- <div class="container-sm">
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-auto">
-                                <p>
-                                    Fabian Mentzer<a href="#" id="toggle-aff-fa-footnote">&midast;</a>
-                                </p>
-                                <p>ETH Zurich</p>
-                            </div>
-                            <div class="col-sm-auto">
-                                <p>George Toderici</p>
-                                <p>Google Research</p>
-                            </div>
-                            <div class="col-sm-auto">
-                                <p>
-                                    Michael Tschannen
-                                    <a href="#" id="toggle-aff-mi-footnote">
-                                        <sup>&ddagger;</sup>
-                                    </a>
-                                </p>
-                                <p></p>
-                            </div>
-                            <div class="col-sm-auto">
-                                <p>Eirikur Agustsson</p>
-                                <p>Google Research</p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="inline-footnote card card-body" id="footnote-aff-fa">&midast;Work done while interning at Google Research. -->
-            <!-- </div> -->
-                    <!-- <div class="inline-footnote card card-body" id="footnote-aff-mi">
-                        <sup>&ddagger;</sup>
-                        Work done while at Google Research.
-            
-                    </div> -->
+                    <h1>PIC-M<sup>3</sup>:Perceptual Image Compression with Multi-scale and Multi-modal Merge Networks</h1>
                 </div>
                 <div class="container-md">
                     <h2>Abstract</h2>
                     <p>
-                        With the rapid growth of online media, the number of images on the internet has surged, posing significant challenges for data transmission and storage. This necessitates the development of efficient compression algorithms. While learned image compression (LIC) methods have made significant progress, they often overlook the viewer’s subjective experience. In contrast, perceptual image compression (PIC) techniques have gained attention for their focus on maintaining visual quality in line with human perception in compressed images. In this paper, we present a novel perceptual image compression network that integrates multi-modal information across multiple scales to enhance graphic perception and achieve superior perceptual compression results. We propose a fusion method called Multi-scale Multi-modal Merge Network (M3Net) to effectively combine information from different modalities. Our approach first fuses multi-modal information along the height dimension to capture relevant vertical context, then reduces dimensionality and collects horizontal context along the width dimension. By alternating these operations, the final pixels effectively capture the overall context of the image. This method significantly improves the perceived quality of images while reducing model size and runtime. Compared to using cross attention in place of our M3Net, our approach saves two-thirds of memory and halves the runtime, achieving comparable visual quality. We conducted extensive experiments to quantitatively assess the core components of our algorithm and demonstrate its effectiveness from various angles. Finally, we evaluated our algorithm using eight different visual quality assessment metrics, including state-of-the-art perceptual quality indices (e.g., CLIP-IQA, NIQE, and FID) and traditional PSNR. The results show that our PIC-M3 network outperforms existing algorithms across most evaluation metrics.                    </p>
+                        With the rapid growth of online media, the number of images on the internet has surged, posing significant challenges for data transmission and storage. This necessitates the development of efficient compression algorithms. While learned image compression (LIC) methods have made significant progress, they often overlook the viewer’s subjective experience. In contrast, perceptual image compression (PIC) techniques have gained attention for their focus on maintaining visual quality in line with human perception in compressed images. In this paper, we present a novel perceptual image compression network that integrates multi-modal information across multiple scales to enhance graphic perception and achieve superior perceptual compression results. We propose a fusion method called Multi-scale Multi-modal Merge Network (M<sup>3</sup>Net) to effectively combine information from different modalities. Our approach first fuses multi-modal information along the height dimension to capture relevant vertical context, then reduces dimensionality and collects horizontal context along the width dimension. By alternating these operations, the final pixels effectively capture the overall context of the image. This method significantly improves the perceived quality of images while reducing model size and runtime. Compared to using cross attention in place of our M<sup>3</sup>Net, our approach saves two-thirds of memory and halves the runtime, achieving comparable visual quality. We conducted extensive experiments to quantitatively assess the core components of our algorithm and demonstrate its effectiveness from various angles. Finally, we evaluated our algorithm using eight different visual quality assessment metrics, including state-of-the-art perceptual quality indices (e.g., CLIP-IQA, NIQE, and FID) and traditional PSNR. The results show that our PIC-M<sup>3</sup> network outperforms existing algorithms across most evaluation metrics.                    </p>
                 </div>
                 <hr/>
                 <div class="alert alert-warning smartphone-alert" role="alert">
